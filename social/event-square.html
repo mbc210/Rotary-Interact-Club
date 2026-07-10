@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Social — Event Announcement (1080×1080)</title>
+<link rel="stylesheet" href="../css/styles.css" />
+<style>
+  html, body { margin: 0; }
+  .post { width: 1080px; height: 1080px; position: relative; overflow: hidden; font-family: var(--font-primary); color: #fff; background: linear-gradient(155deg, #0a3a72 0%, var(--rotary-royal-blue) 50%, var(--azure) 100%); }
+  .glowA { position: absolute; top: -180px; right: -140px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(0,162,224,0.5), transparent 70%); }
+  .glowB { position: absolute; bottom: -220px; left: -160px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(247,168,27,0.32), transparent 70%); }
+  .inner { position: relative; padding: 90px 90px 80px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; }
+  .brand { font-size: 34px; font-weight: 800; letter-spacing: -0.01em; }
+  .brand .dot { color: var(--sky-blue); }
+  .club { font-size: 17px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.72); margin-top: 6px; }
+  .pill { align-self: flex-start; margin-top: 70px; padding: 12px 26px; border-radius: var(--radius-pill); background: var(--rotary-gold); color: var(--ink-900); font-size: 22px; font-weight: 800; letter-spacing: 0.02em; }
+  h1 { font-size: 92px; font-weight: 800; letter-spacing: -0.03em; line-height: 0.98; margin: 30px 0 0; }
+  .accent { color: var(--rotary-gold); }
+  .meta { margin-top: auto; display: flex; flex-direction: column; gap: 22px; }
+  .metarow { display: flex; align-items: center; gap: 22px; font-size: 34px; font-weight: 600; }
+  .metarow .ic { width: 62px; height: 62px; border-radius: 16px; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+</style>
+</head>
+<body>
+  <div class="post">
+    <div class="glowA"></div>
+    <div class="glowB"></div>
+    <div class="inner">
+      <div>
+        <div class="brand">Interact<span class="dot">.</span></div>
+        <div class="club">Club of Chinatown</div>
+      </div>
+      <div class="pill">Volunteer Day</div>
+      <h1>Lunar New Year<br /><span class="accent">Clean-Up</span></h1>
+      <div class="meta">
+        <div class="metarow">
+          <span class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--rotary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          Saturday, Feb 21 · 9:00 AM
+        </div>
+        <div class="metarow">
+          <span class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--rotary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          Grant Avenue, Chinatown
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

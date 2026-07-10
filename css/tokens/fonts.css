@@ -1,0 +1,9 @@
+/* ==========================================================================
+   FONTS — Interact Club of Chinatown
+   Rotary primary font is Frutiger (licensed); free fallback is Open Sans.
+   Rotary secondary font is Sentinel (licensed); free fallback is Georgia.
+   We ship Open Sans (Google Fonts) as the primary and use Georgia (system)
+   for secondary. SUBSTITUTION: Frutiger -> Open Sans, Sentinel -> Georgia.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
