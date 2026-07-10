@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Interact Chinatown — Newsletter</title>
+<link rel="stylesheet" href="../css/styles.css" />
+<style>
+  body { margin: 0; background: var(--ink-100); font-family: var(--font-primary); padding: 24px 0; }
+  .email { max-width: 640px; margin: 0 auto; background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+  .masthead { background: linear-gradient(160deg, #0a3a72, var(--rotary-royal-blue) 60%, var(--azure)); color: #fff; padding: 28px 32px; }
+  .brand { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+  .brand .dot { color: var(--sky-blue); }
+  .club { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.75); margin-top: 3px; }
+  .issue { display: flex; justify-content: space-between; align-items: baseline; margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(255,255,255,0.85); }
+  .pad { padding: 28px 32px; }
+  .eyebrow { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brand); display: flex; align-items: center; gap: 8px; }
+  .eyebrow::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--brand); }
+  h1.lead { font-size: 27px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; color: var(--text-heading); margin: 12px 0 10px; }
+  p.body { font-family: var(--font-secondary); font-size: 16px; line-height: 1.62; color: var(--text-body); margin: 0 0 14px; }
+  .stats { display: flex; gap: 8px; padding: 0 32px 8px; }
+  .stat { flex: 1; background: var(--surface-brand-soft); border-radius: var(--radius-md); padding: 16px 14px; text-align: center; }
+  .stat .n { font-size: 26px; font-weight: 800; color: var(--brand-strong); letter-spacing: -0.02em; }
+  .stat .l { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-top: 2px; }
+  .divider { height: 1px; background: var(--border-subtle); margin: 4px 32px; }
+  .event { display: flex; gap: 16px; padding: 16px 32px; align-items: center; }
+  .datechip { flex-shrink: 0; width: 60px; height: 64px; border-radius: var(--radius-md); background: var(--rotary-royal-blue); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .datechip .mo { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+  .datechip .dy { font-size: 24px; font-weight: 800; line-height: 1; }
+  .event h3 { margin: 0 0 3px; font-size: 17px; font-weight: 700; color: var(--text-heading); }
+  .event .meta { font-size: 13.5px; color: var(--text-muted); display: flex; gap: 12px; }
+  .cta { display: block; text-decoration: none; text-align: center; background: var(--rotary-gold); color: var(--ink-900); font-weight: 700; font-size: 16px; padding: 14px; border-radius: var(--radius-md); margin: 8px 32px 4px; }
+  .footer { background: var(--ink-900); color: var(--stone); padding: 26px 32px; font-size: 12.5px; line-height: 1.6; text-align: center; }
+  .footer .f-brand { color: #fff; font-weight: 800; font-size: 16px; margin-bottom: 8px; }
+  .tag { display: inline-block; padding: 3px 10px; border-radius: var(--radius-pill); background: var(--surface-gold-soft); color: #8a5a00; font-size: 11px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="email">
+    <div class="masthead">
+      <div class="brand">Interact<span class="dot">.</span></div>
+      <div class="club">Club of Chinatown · Newsletter</div>
+      <div class="issue"><span>Issue No. 14</span><span>March 2026</span></div>
+    </div>
+
+    <div class="pad" style="padding-bottom: 8px;">
+      <span class="tag">This month</span>
+      <h1 class="lead">A record turnout at the Lunar New Year clean-up</h1>
+      <p class="body">Thirty-two of you showed up before sunrise to clear Grant Avenue ahead of the parade — our biggest crew yet. Neighbors brought tea, the parade committee sent thanks, and we filled eleven bags before 9 AM.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">32</div><div class="l">Volunteers</div></div>
+      <div class="stat"><div class="n">96</div><div class="l">Hours served</div></div>
+      <div class="stat"><div class="n">11</div><div class="l">Bags cleared</div></div>
+    </div>
+
+    <div class="pad" style="padding-top: 20px; padding-bottom: 6px;">
+      <span class="eyebrow">Coming up</span>
+    </div>
+    <div class="event">
+      <div class="datechip"><span class="mo">Mar</span><span class="dy">08</span></div>
+      <div><h3>Tech Help for Elders</h3><div class="meta"><span>1:00 PM</span><span>Chinatown Library</span></div></div>
+    </div>
+    <div class="divider"></div>
+    <div class="event">
+      <div class="datechip" style="background: var(--grass);"><span class="mo">Mar</span><span class="dy">28</span></div>
+      <div><h3>Spring Food Drive</h3><div class="meta"><span>10:00 AM</span><span>Portsmouth Square</span></div></div>
+    </div>
+
+    <a class="cta" href="../join.html">RSVP for an upcoming event →</a>
+
+    <div class="pad" style="padding-top: 18px;">
+      <span class="eyebrow">Member spotlight</span>
+      <h1 class="lead" style="font-size: 21px;">David C. led his first project</h1>
+      <p class="body" style="margin-bottom: 0;">Our newest committee chair organized the library tutoring sign-ups end to end. "I was nervous, but everyone just wanted to help," he said. Nice work, David.</p>
+    </div>
+
+    <div class="footer">
+      <div class="f-brand">Interact Club of Chinatown</div>
+      A branch of Rotary International · Chartered by District 5150<br />
+      hello@interactchinatown.org · You're receiving this because you signed up at a meeting.
+    </div>
+  </div>
+</body>
+</html>

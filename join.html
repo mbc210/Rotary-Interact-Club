@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Join the club — Interact Club of Chinatown</title>
+<meta name="description" content="Join the Interact Club of Chinatown. Membership is free and open to all students aged 12–18. Fill out the form and we'll email you the meeting details." />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <a class="wordmark wordmark-sm" href="index.html" aria-label="Interact Club of Chinatown — home">
+    <span class="wm-brand">Interact<span class="wm-dot">.</span></span>
+    <span class="wm-club">Club of Chinatown</span>
+  </a>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="events.html">Events</a>
+    <a href="index.html#impact">Impact</a>
+    <a href="join.html" aria-current="page">Get Involved</a>
+  </nav>
+  <div style="display:flex; align-items:center; gap:8px;">
+    <a class="btn btn-sm btn-accent" href="join.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-900)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 14h2a2 2 0 0 0 2-2 2 2 0 0 0-2-2H9.5L7 12"/><path d="m5 15 4 4"/><path d="M2 13l4 4"/><path d="M13.5 5.5 12 7l-1.5-1.5a2.1 2.1 0 0 1 3-3 2.1 2.1 0 0 1 0 3z"/></svg>
+      Volunteer
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="join-section">
+    <div class="join-grid">
+
+      <div class="join-intro">
+        <div class="section-heading">
+          <span class="eyebrow">Get involved</span>
+          <h1>Join the club</h1>
+        </div>
+        <p>Fill this out and we'll email you the meeting details. Membership is free and open to all students aged 12–18.</p>
+        <div class="join-facts">
+          <div class="fact">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Meets every other Thursday
+          </div>
+          <div class="fact">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Galileo High, Room 210
+          </div>
+          <div class="fact">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <a href="mailto:hello@interactchinatown.org">hello@interactchinatown.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad-lg">
+        <div class="alert alert-success" id="join-success" hidden>
+          <span class="alert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><polyline points="22 4 12 14 9 11"/></svg>
+          </span>
+          <div>
+            <div class="alert-title">Thanks — you're on the list!</div>
+            <div class="alert-body">We'll be in touch before the next meeting.</div>
+          </div>
+        </div>
+
+        <form class="join-form" id="join-form" novalidate>
+          <div class="name-row">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="first-name" type="text" placeholder="Mei" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="last-name" type="text" placeholder="Lin" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@school.edu" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="committee">Which committee interests you most?</label>
+            <span class="select-wrap">
+              <select id="committee" name="committee" required>
+                <option value="" disabled selected>Pick one</option>
+                <option>Outreach</option>
+                <option>Fundraising</option>
+                <option>Events</option>
+                <option>Not sure yet</option>
+              </select>
+              <span class="select-chevron">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </span>
+          </div>
+          <div class="field">
+            <label for="why">Why do you want to join? (optional)</label>
+            <textarea id="why" name="why" rows="3" placeholder="Tell us a little about you…"></textarea>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="newsletter" checked />
+            <span class="box">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Email me the monthly newsletter
+          </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit application</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="wordmark wordmark-inverse">
+        <span class="wm-brand">Interact<span class="wm-dot">.</span></span>
+        <span class="wm-club">Club of Chinatown</span>
+      </span>
+      <p>A branch of Rotary International. Young leaders serving the Chinatown community through outreach and volunteering.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+        <a href="mailto:hello@interactchinatown.org" aria-label="Email us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
+        <a href="https://www.rotary.org/en/get-involved/interact-clubs" aria-label="Rotary International"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Explore</div>
+        <nav aria-label="Explore">
+          <a href="index.html#about">About</a>
+          <a href="events.html">Events</a>
+          <a href="index.html#impact">Impact</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Get involved</div>
+        <nav aria-label="Get involved">
+          <a href="join.html">Volunteer</a>
+          <a href="join.html">Donate</a>
+          <a href="mailto:hello@interactchinatown.org">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Interact Club of Chinatown</span>
+    <span>Chartered by Rotary District 5150</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

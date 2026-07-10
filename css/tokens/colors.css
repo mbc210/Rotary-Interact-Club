@@ -1,0 +1,78 @@
+/* ==========================================================================
+   COLORS — Interact Club of Chinatown (Rotary brand system)
+   Core identity colors are used per Rotary brand rules (pure, never tinted).
+   Interact's identity color is Sky Blue (#00A2E0). Rotary Royal Blue and Gold
+   anchor the parent brand. Extended palette is for backgrounds/accents only —
+   never inside a logo lockup.
+   ========================================================================== */
+
+:root {
+  /* --- Core identity (Rotary) --- */
+  --rotary-royal-blue: #17458F; /* PMS 286C — "Rotary" wordmark */
+  --rotary-gold:       #F7A81B; /* PMS 130C — the wheel */
+  --azure:             #0067C8; /* PMS 2175C — one-color signature */
+  --sky-blue:          #00A2E0; /* PMS 2202C — INTERACT identity color */
+  --cranberry:         #D41367; /* PMS 214C — Rotaract */
+  --cardinal:          #E02927; /* PMS 485C — End Polio Now */
+
+  /* --- Extended palette (backgrounds, charts, accents) --- */
+  --turquoise:  #00ADBB;
+  --orange:     #FF7600;
+  --violet:     #901F93;
+  --grass:      #009739;
+  --powder-blue:#B9D9EB;
+  --moss:       #A7ACA2;
+  --lavender:   #C6BCD0;
+  --taupe:      #D9C89E;
+  --stone:      #9BA4B4;
+  --slate:      #657F99;
+  --charcoal:   #54565A;
+  --pewter:     #898A8D;
+  --smoke:      #B1B1B1;
+  --silver:     #D0CFCD;
+  --storm:      #7A6E66;
+  --ash:        #968B83;
+  --platinum:   #BFB7B0;
+  --cloud:      #D6D1CA;
+  --white:      #FFFFFF;
+  --black:      #000000;
+
+  /* --- Neutral ramp (derived from Cool Gray family for UI surfaces) --- */
+  --ink-900: #1E2A3A; /* deep navy-charcoal for headings */
+  --ink-700: #54565A; /* charcoal — body text */
+  --ink-500: #898A8D; /* pewter — secondary text */
+  --ink-300: #B1B1B1; /* smoke — muted / disabled */
+  --ink-200: #D0CFCD; /* silver — hairlines */
+  --ink-100: #ECEEF1; /* light surface tint */
+  --ink-50:  #F5F7FA; /* app background */
+
+  /* --- Semantic aliases --- */
+  --brand:            var(--sky-blue);      /* Interact primary */
+  --brand-strong:     var(--rotary-royal-blue);
+  --brand-accent:     var(--rotary-gold);
+  --brand-ink:        #007BB0;              /* darker sky for hover/press on brand */
+
+  --text-heading:     var(--ink-900);
+  --text-body:        var(--ink-700);
+  --text-muted:       var(--ink-500);
+  --text-on-brand:    var(--white);
+  --text-link:        var(--azure);
+
+  --surface-page:     var(--ink-50);
+  --surface-card:     var(--white);
+  --surface-sunken:   var(--ink-100);
+  --surface-brand:    var(--sky-blue);
+  --surface-brand-soft: #E5F5FC;           /* pale sky wash */
+  --surface-gold-soft:  #FDF1D9;           /* pale gold wash */
+
+  --border-subtle:    var(--ink-200);
+  --border-strong:    var(--ink-300);
+  --border-brand:     var(--sky-blue);
+
+  --success: var(--grass);
+  --warning: var(--orange);
+  --danger:  var(--cardinal);
+  --info:    var(--azure);
+
+  --focus-ring: color-mix(in srgb, var(--sky-blue) 55%, white);
+}
