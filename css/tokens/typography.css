@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TYPOGRAPHY — Interact Club of Chinatown
+   TYPOGRAPHY - Interact Club of Chinatown
    Primary (headlines, nav, UI): Open Sans  [Frutiger substitute]
    Secondary (body prose, quotes, captions): Georgia  [Sentinel substitute]
    ========================================================================== */
@@ -20,7 +20,7 @@
   --fw-extrabold:800;
 
   /* Type scale (rem, 16px base) */
-  --fs-display: 3.5rem;   /* 56 — hero */
+  --fs-display: 3.5rem;   /* 56 - hero */
   --fs-h1:      2.5rem;   /* 40 */
   --fs-h2:      2rem;     /* 32 */
   --fs-h3:      1.5rem;   /* 24 */
@@ -29,7 +29,7 @@
   --fs-body:    1rem;     /* 16 */
   --fs-sm:      0.875rem; /* 14 */
   --fs-xs:      0.75rem;  /* 12 */
-  --fs-eyebrow: 0.8125rem;/* 13 — uppercase labels */
+  --fs-eyebrow: 0.8125rem;/* 13 - uppercase labels */
 
   /* Line heights */
   --lh-tight:   1.1;

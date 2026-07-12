@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SITE — Interact Club of Chinatown website
+   SITE - Interact Club of Chinatown website
    Component + page styles translated from the design system's website UI kit
    (ui_kits/website). Tokens come from styles.css; this file only consumes them.
    ========================================================================== */
@@ -41,7 +41,7 @@ a { color: var(--text-link); }
 }
 
 /* --------------------------------------------------------------------------
-   Wordmark — type-only stand-in for the official Interact logo.
+   Wordmark - type-only stand-in for the official Interact logo.
    The real lockup (from Rotary's logo builder) should replace this when
    available; see README.
    -------------------------------------------------------------------------- */
@@ -144,7 +144,7 @@ a { color: var(--text-link); }
 .card-pad-lg { padding: var(--space-6); }
 
 /* --------------------------------------------------------------------------
-   Section heading — eyebrow + title + lead
+   Section heading - eyebrow + title + lead
    -------------------------------------------------------------------------- */
 .section-heading {
   display: flex;
@@ -212,7 +212,7 @@ a { color: var(--text-link); }
 }
 
 /* --------------------------------------------------------------------------
-   Event card — accent color set per card via --accent
+   Event card - accent color set per card via --accent
    -------------------------------------------------------------------------- */
 .event-card {
   --accent: var(--brand);
@@ -428,7 +428,7 @@ a { color: var(--text-link); }
 }
 
 /* --------------------------------------------------------------------------
-   Tabs — underline tab bar
+   Tabs - underline tab bar
    -------------------------------------------------------------------------- */
 .tabs {
   display: flex;
@@ -668,7 +668,7 @@ a { color: var(--text-link); }
 }
 
 /* --------------------------------------------------------------------------
-   Past events — compact cards (grid) + write-up view.
+   Past events - compact cards (grid) + write-up view.
    Template: "Past Events" from the Interact Chinatown design project.
    -------------------------------------------------------------------------- */
 .pe-grid {

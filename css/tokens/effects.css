@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EFFECTS — radii, borders, shadows, motion — Interact Club of Chinatown
+   EFFECTS - radii, borders, shadows, motion - Interact Club of Chinatown
    Friendly, approachable civic brand: soft-but-not-pill radii, gentle shadows.
    ========================================================================== */
 
@@ -16,7 +16,7 @@
   --border-hair: 1px;
   --border-thick: 2px;
 
-  /* Shadows — cool-tinted, soft */
+  /* Shadows - cool-tinted, soft */
   --shadow-xs: 0 1px 2px rgba(23, 69, 143, 0.06);
   --shadow-sm: 0 1px 3px rgba(23, 69, 143, 0.08), 0 1px 2px rgba(23, 69, 143, 0.04);
   --shadow-md: 0 4px 12px rgba(23, 69, 143, 0.10), 0 2px 4px rgba(23, 69, 143, 0.06);
