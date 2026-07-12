@@ -1,4 +1,4 @@
-// Interact Club of Chinatown — site interactions.
+// Interact Club of Chinatown - site interactions.
 // Mobile nav toggle, event category filter tabs, and the join-form success state.
 
 (function () {
