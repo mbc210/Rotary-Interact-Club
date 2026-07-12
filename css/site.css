@@ -8,6 +8,11 @@
 
 [hidden] { display: none !important; }
 
+html { scroll-behavior: smooth; }
+
+/* Keep anchored sections clear of the sticky header */
+main [id] { scroll-margin-top: 84px; }
+
 html, body {
   margin: 0;
   background: var(--surface-page);
@@ -28,6 +33,7 @@ a { color: var(--text-link); }
    Reduced motion
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
