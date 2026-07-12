@@ -32,6 +32,29 @@
     });
   }
 
+  // --- Past events grid/detail routing (past-events.html) --------------------
+  var peGrid = document.getElementById("pe-grid-view");
+  if (peGrid) {
+    var details = document.querySelectorAll(".pe-detail");
+    var route = function () {
+      var id = location.hash.slice(1);
+      var target = id && document.getElementById("detail-" + id);
+      details.forEach(function (d) { d.hidden = true; });
+      peGrid.hidden = !!target;
+      if (target) target.hidden = false;
+      window.scrollTo(0, 0);
+    };
+    document.querySelectorAll(".pe-back").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        history.pushState("", "", location.pathname);
+        route();
+      });
+    });
+    window.addEventListener("hashchange", route);
+    route();
+  }
+
   // --- Join form (join.html) -------------------------------------------------
   var form = document.getElementById("join-form");
   var success = document.getElementById("join-success");
