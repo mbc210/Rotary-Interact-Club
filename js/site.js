@@ -89,7 +89,7 @@
       if (target) target.hidden = false;
       window.scrollTo(0, 0);
     };
-    document.querySelectorAll(".pe-back").forEach(function (a) {
+    document.querySelectorAll(".pe-detail .pe-back").forEach(function (a) {
       a.addEventListener("click", function (e) {
         e.preventDefault();
         history.pushState("", "", location.pathname);
