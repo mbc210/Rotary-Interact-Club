@@ -45,7 +45,7 @@
   });
   if (spy.length) {
     var navLinks = document.querySelectorAll(".site-nav a");
-    var homeLink = document.querySelector('.site-nav a[href="index.html"], .site-nav a[href="./"]');
+    var homeLink = document.querySelector('.site-nav a[href="#"], .site-nav a[href="index.html"]');
     var onScroll = function () {
       var y = window.scrollY + 110;
       var current = null;

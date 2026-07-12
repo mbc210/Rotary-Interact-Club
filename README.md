@@ -8,8 +8,9 @@ Implemented from the club's [Claude Design](https://claude.ai/design) project �
 
 | Page | Description |
 | --- | --- |
-| `index.html` | Home — hero, impact stats, mission, upcoming events, CTA band |
+| `index.html` | Home — one-page layout the top nav anchors into: hero, impact stats, mission, upcoming events, past-event highlights, join form, CTA band |
 | `events.html` | Events & volunteer days, filterable by category |
+| `past-events.html` | Past events — card grid with per-event write-ups (stats, recap, gallery) |
 | `join.html` | Get involved — club info + membership application form |
 
 ## Extras
