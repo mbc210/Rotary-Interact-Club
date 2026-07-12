@@ -8,6 +8,8 @@ highlights" section.
 - `halloween-1.jpg` … `halloween-4.jpg` — Halloween block party (October 31, 2024)
 - `cards-1.jpg` … `cards-5.jpg` — Get-well cards for seniors (January 9, 2026)
 - `doyers-1.jpg` … `doyers-14.jpg` — Doyers Street ground-mural repaint, artwork by Colleen Kong-Savage (September 5, 2024)
+- `bags-1.jpg` … `bags-5.jpg` — Day of Service care-bag packing, Transfiguration Chinese School (May 16, 2026)
+- `pinning-1.jpg` … `pinning-3.jpg` — Second pinning ceremony at Hop Lee (May 16, 2026)
 
 To add more: upload phone photos here and ask Claude to optimize + wire them in,
 or pre-strip metadata yourself before committing.
