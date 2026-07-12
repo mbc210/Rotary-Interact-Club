@@ -12,6 +12,51 @@
       var open = header.classList.toggle("nav-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
+    // Close the menu when a link is chosen, so it doesn't cover the page
+    document.querySelectorAll(".site-nav a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        header.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // --- On-page anchor links --------------------------------------------------
+  // When already on the homepage (served as "/", "/index.html", etc.),
+  // "index.html#about" style links would trigger a full reload. Rewrite them
+  // to plain hashes so they smooth-scroll instead.
+  var onHome = /(^|\/)(index\.html)?$/.test(location.pathname);
+  if (onHome) {
+    document.querySelectorAll('a[href^="index.html#"]').forEach(function (a) {
+      a.setAttribute("href", a.getAttribute("href").replace("index.html", ""));
+    });
+  }
+
+  // --- Scrollspy: highlight the nav item for the section in view -------------
+  var spy = [];
+  document.querySelectorAll(".site-nav a").forEach(function (a) {
+    var href = a.getAttribute("href");
+    var i = href.indexOf("#");
+    if (i === -1) return;
+    var page = href.slice(0, i);
+    if (page && !location.pathname.endsWith(page)) return;
+    var sec = document.getElementById(href.slice(i + 1));
+    if (sec) spy.push({ sec: sec, link: a });
+  });
+  if (spy.length) {
+    var navLinks = document.querySelectorAll(".site-nav a");
+    var homeLink = document.querySelector('.site-nav a[href="index.html"], .site-nav a[href="./"]');
+    var onScroll = function () {
+      var y = window.scrollY + 110;
+      var current = null;
+      spy.forEach(function (s) {
+        if (s.sec.offsetTop <= y && y < s.sec.offsetTop + s.sec.offsetHeight) current = s.link;
+      });
+      navLinks.forEach(function (a) { a.removeAttribute("aria-current"); });
+      (current || homeLink) && (current || homeLink).setAttribute("aria-current", "page");
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
 
   // --- Event filter tabs (events.html) --------------------------------------
