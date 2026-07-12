@@ -661,6 +661,68 @@ a { color: var(--text-link); }
   gap: 22px;
 }
 
+/* --------------------------------------------------------------------------
+   Highlights — past-event recap cards with a photo strip
+   -------------------------------------------------------------------------- */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.hl-card {
+  --accent: var(--brand);
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.hl-media {
+  display: flex;
+  gap: 3px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--surface-brand-soft), var(--powder-blue));
+}
+.hl-media img {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hl-body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.hl-body .eyebrow { font-size: var(--fs-xs); }
+.hl-body h3 {
+  margin: 0;
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-bold);
+  color: var(--text-heading);
+  line-height: 1.25;
+}
+.hl-body p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-body);
+  line-height: 1.55;
+}
+.hl-body .event-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: auto;
+}
+.hl-body .event-meta-row svg { stroke: var(--accent); flex-shrink: 0; }
+
 .cta-band {
   background: var(--rotary-royal-blue);
   color: #fff;
@@ -801,6 +863,7 @@ a { color: var(--text-link); }
 @media (max-width: 960px) {
   .events-grid { grid-template-columns: repeat(2, 1fr); }
   .mission-grid { grid-template-columns: 1fr; gap: 36px; }
+  .highlights-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {

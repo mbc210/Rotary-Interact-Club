@@ -1,6 +1,6 @@
 # Interact Club of Chinatown — Website
 
-Static website for the **Interact Club of Chinatown**, a youth service club and branch of **Rotary International** (Interact is Rotary's program for young people aged 12–18), serving San Francisco's Chinatown.
+Static website for the **Interact Club of Chinatown**, a youth service club and branch of **Rotary International** (Interact is Rotary's program for young people aged 12–18), serving Manhattan's Chinatown in New York City.
 
 Implemented from the club's [Claude Design](https://claude.ai/design) project — *Interact Chinatown Design System* — which is built on Rotary International's public brand guidelines.
 
@@ -35,4 +35,4 @@ No build step — open `index.html` directly or host with any static server (wor
 - **Colors:** Sky Blue `#00A2E0` (Interact identity), Rotary Royal Blue `#17458F`, Rotary Gold `#F7A81B` (high-emphasis accent, used sparingly). Extended palette colors code event categories.
 - **Type:** Open Sans (Frutiger substitute) for headlines/UI; Georgia (Sentinel substitute) for body prose.
 - **Logo:** the official Interact wheel logo is *not* included — it may only be generated from Rotary's official logo builder. The type-only wordmark in the header/footer is a stand-in; swap in the real lockup when available.
-- **Photography:** none included — event cards and heroes fall back to brand gradients. Drop warm, candid community photos into the `.event-media` slots when available.
+- **Photography:** event cards, highlight cards, and heroes fall back to brand gradients until photos are added. Club photos live in `assets/photos/` and are wired into the homepage "Recent highlights" section (`.hl-media`) and event-card `.event-media` slots.
